@@ -1,0 +1,194 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS Variables */
+:root {
+  --navbar-height: 59px;
+}
+/* Navigation bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  /* text-align: left; */
+}
+/* Logo and image */
+#logo {
+  margin: 1px 3px;
+}
+#logo img {
+  height: 20%;
+  width: 11%;
+  margin: 3px 5px;
+}
+/* Navigation bar: list styling */
+#navbar ul {
+  display: flex;
+}
+#navbar::before {
+  content: "";
+  background-color: rgb(123, 84, 1);
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  /* width: 100%; */
+  z-index: -1;
+  opacity: 0.59;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.5rem;
+  font-family: "Balthazar", serif;
+}
+#navbar ul li a {
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: rgb(29, 19, 1);
+}
+#navbar ul li a:hover {
+  background-color: white;
+  color: black;
+}
+/* Home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 695px;
+}
+#home::before {
+  content: "";
+  background: url("../bg3.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.79;
+  top: 0px;
+  left: 0px;
+}
+/* utility classes */
+.h-primary {
+  font-size: 3.8rem;
+  padding: 14px;
+  font-family: "Balthazar", serif;
+}
+.h-secondary {
+  font-size: 1.8rem;
+  padding: 12px;
+  font-family: "Balthazar", serif;
+}
+#home h1 {
+  color: rgb(67, 45, 4);
+  text-align: center;
+  font-family: "Balthazar", serif;
+}
+#home p {
+  color: rgb(67, 45, 4);
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: "Balthazar", serif;
+}
+.btn {
+  padding: 6px 20px;
+  border: 2px solid rgb(67, 45, 4);
+  background-color: rgba(114, 67, 16, 0.72);
+  color: rgb(253, 251, 251);
+  margin: 17px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.center {
+  text-align: center;
+}
+/* services */
+#services {
+  margin: 34px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid rgb(116, 9, 9);
+  padding: 40px 23px;
+  margin: 18px;
+  border-radius: 23px;
+  background-color: #e9765f1a;
+}
+#services .box img {
+  height: 170px;
+  display: block;
+  margin: auto;
+}
+#services .box p {
+  font-family: "Balthazar", serif;
+}
+
+
+/* Clients Section */
+#client-section::before {
+  content: "";
+  background: url("../bg2.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 277px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-item{
+  padding: 24px;
+}
+#clients img{
+  height: 135px;
+}
+footer{
+  background: black;
+  color: white;
+  padding: 9px 24px;
+}
+/* Contact Section  */
+#contact{
+  position: relative;
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background-color: rgb(123, 84, 1);
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box form{
+  width: 40%;
+}
+#contact-box label{
+  font-size: 1.3rem;
+  font-family: "Balthazar", serif;
+}
+/* #contact-box input{} */
+#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
